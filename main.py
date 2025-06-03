@@ -88,6 +88,7 @@ def test_find_suitable_user():
 def my_func(function, *args):
     name = function.__name__.replace('_', ' ').title()
     format = ', '.join([*args])
+    print(f'{name} [{format}]')
     return f'{name} [{format}]'
 
 
